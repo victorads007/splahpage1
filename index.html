@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ofertas da Semana - Supermercado</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+
+  body {
+    width: 375px;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+    background: #f2f2f2;
+  }
+
+  /* ===== SPLASH SCREEN AMARELA ===== */
+  .splash {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 375px;
+    height: 100%;
+    min-height: 100vh;
+    background: #ffc107;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    animation: sumirFundo 0.8s ease forwards;
+    animation-delay: 2.2s;
+  }
+
+  .splash img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    animation: entradaLogo 0.9s ease-out forwards;
+  }
+
+  @keyframes entradaLogo {
+    0% {
+      opacity: 0;
+      transform: scale(0.4) translateY(-40px);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1.08) translateY(4px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  @keyframes sumirFundo {
+    0% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+  /* ================================== */
+
+  /* ===== IMAGEM ÚNICA DA PÁGINA ===== */
+  .pagina-completa {
+    width: 375px;
+    height: 1500px;
+    display: block;
+  }
+  /* ==================================== */
+</style>
+</head>
+<body>
+
+<!-- ===== TELA DE ABERTURA (SPLASH) ===== -->
+<div class="splash">
+  <!-- LOGO AQUI: arquivo em 400x400px -->
+  <img src="imagens/_80424993-5107-4B27-B699-CC454868E4C6_-removebg-preview.png" alt="Logo Supermercado">
+</div>
+<!-- ====================================== -->
+
+<!-- ===== IMAGEM ÚNICA (a página inteira colada aqui) ===== -->
+<img class="pagina-completa" src="imagens/Image Editing (5).png" alt="Ofertas da Semana">
+<!-- ======================================================== -->
+
+</body>
+</html>
